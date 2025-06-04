@@ -11,5 +11,5 @@ module.exports = app => {
     // Delete a wpisy with id 
     router.delete("/:id", bingo.delete); 
   
-    app.use('/api/bingo', router); 
+    app.use('', router); 
 };

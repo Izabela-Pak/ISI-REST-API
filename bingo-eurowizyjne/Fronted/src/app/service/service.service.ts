@@ -9,7 +9,7 @@ import { catchError } from 'rxjs';
 })
 export class ServiceService {
 
-  private apiURL = "https://isi-rest-api.onrender.com/api/bingo"
+  private apiURL = "https://isi-rest-api.onrender.com"
 
   httpOptions = {
     headers: new HttpHeaders({
