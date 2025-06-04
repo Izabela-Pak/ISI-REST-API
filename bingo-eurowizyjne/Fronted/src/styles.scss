@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Dodum&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Radley:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Radley", serif;
+    background-image: url('assets/background.png');
+    background-size: cover; 
+    background-repeat: repeat;
+    height: 100vh; 
+}

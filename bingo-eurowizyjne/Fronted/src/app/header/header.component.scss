@@ -1,0 +1,41 @@
+$hover-text: #dfd7ca;
+$text-color: white;
+
+.header {
+    min-width: 100%;
+    background: linear-gradient(90deg,rgba(252, 84, 182, 0.8) 1%, rgba(224, 26, 243, 0.8) 50%, rgba(168, 23, 251, 0.8) 100%);;
+    background-blend-mode: color-burn;
+    height: 70px;
+    position: relative;
+    margin: 0;
+
+    .buttons {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        a {
+            padding-left: 3%;
+            padding-right: 3%;
+            white-space:nowrap;
+            font-size: 25px;
+            text-decoration: none;
+            color: $text-color;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color:$hover-text;
+            text-decoration: underline;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .header {
+        height: 50px;
+    }
+}

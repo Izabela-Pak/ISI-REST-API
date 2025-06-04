@@ -1,0 +1,64 @@
+$table-background: rgb(255, 255, 255);
+
+.bingo-board {
+  margin-top: 2%;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  table {
+    border-collapse: collapse;
+    text-align: center;
+
+    td {
+      background-color: $table-background;
+      min-width: 10vw;
+      min-height: 10vh;
+      padding: 3%;
+      font-size: 18px;
+      border: 3px solid blue;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+
+      &.selected {
+        background-color: #4CAF50;
+        color: white;
+      }
+    }
+  }
+
+  .message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+  }
+
+  .bingo-message {
+    margin-top: 20px;
+    text-align: center;
+
+    h2 {
+      color: #4CAF50;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+}

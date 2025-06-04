@@ -1,0 +1,21 @@
+<div class="bingo-board" *ngIf="!message; else notEnoughWords">
+  <table>
+    <tr *ngFor="let row of board; let i = index">
+      <td *ngFor="let cell of row; let j = index"
+          [class.selected]="cell.selected"
+          (click)="toggleCell(i,j)">
+        {{ cell.text }}
+      </td>
+    </tr>
+  </table>
+
+  <div *ngIf="bingoFound" class="bingo-message">
+    <h2>BINGO! 🎉</h2>
+    <button (click)="resetBoard()">Przelosuj</button>
+    <button (click)="continueGame()" *ngIf="!continueAfterBingo">Kontynuuj</button>
+  </div>
+</div>
+
+<ng-template #notEnoughWords>
+  <p class="message">{{ message }}</p>
+</ng-template>
