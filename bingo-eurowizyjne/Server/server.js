@@ -13,10 +13,6 @@ db.sequelize.sync()
         console.log(`Błąd ${error}`);
     });
 
-var corsOptions = {
-    origin: "http://localhost:4040"
-};
-
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
