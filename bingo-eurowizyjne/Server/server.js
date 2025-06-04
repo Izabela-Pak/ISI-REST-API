@@ -24,3 +24,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require("./app/routes/bingo.routes")(app);
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => { 
+    console.log(`Server is running on port ${PORT}.`); 
+});
