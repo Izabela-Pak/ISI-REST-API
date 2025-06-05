@@ -14,7 +14,7 @@ db.sequelize.sync()
     });
 
 const corsOptions = {
-  origin: 'https://isi-rest-api-website.onrender.com',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
