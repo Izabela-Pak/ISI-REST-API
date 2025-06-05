@@ -5,7 +5,7 @@
 # Zdjęcia do wybranych elementów:
 Stawianie bazy danych:
 
-![Nowa baza danych](./Screenshots/Baza-danych.png.png)
+![Nowa baza danych](./Screenshots/Baza-danych.png)
 
 Postawienie serwera:
 
