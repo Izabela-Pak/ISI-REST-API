@@ -1,10 +1,10 @@
 <div class="formularz">
-  <form (ngSubmit)="dodaj()" #form="ngForm">
+  <form #form="ngForm">
 
     <input type="text" name="wpis" id="wpis" autocomplete="off" required [(ngModel)]="dane.nazwa">
         <label for="wpis">Dodaj nowy wpis</label>
     <br>
-      <button  #myButton type="submit" class="button">Dodaj</button>
+      <button  #myButton (click)="dodaj()" class="button">Dodaj</button>
   </form>
 </div>
 <div class="actual-entries">
