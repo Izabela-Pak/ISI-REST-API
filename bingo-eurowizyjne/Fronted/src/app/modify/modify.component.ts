@@ -36,7 +36,7 @@ export class ModifyComponent {
   }
 
   dodaj(){
-    console.log(this.dane.nazwa)
+    console.log(this.dane.nazwa + 'Sprawdzam')
     this.serviceService.create(this.dane).subscribe((res:any)=>{
       console.log("Wpis dodany")
       this.pobranieWpisow();
